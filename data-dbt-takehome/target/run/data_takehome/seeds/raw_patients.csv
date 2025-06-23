@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "data_takehome"."main"."raw_patients";
+    -- dbt seed --
+    
+          COPY "data_takehome"."main"."raw_patients" FROM '/Users/qamr/Documents/Development/suvera/data-dbt-takehome/seeds/raw_patients.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

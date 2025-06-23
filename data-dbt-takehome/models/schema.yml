@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int__patients
+    description: 'intermediate layer for patient data'
+    columns:
+     - name: patient_id
+       description: 'patients unique id'
+       tests:
+        - unique
